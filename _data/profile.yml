@@ -1,0 +1,56 @@
+# primary_name: "Guanyi Chen 「陈冠一」"
+#secondary_name: "PhD Student in HKUST-GZ"
+navbar_name: "Guanyi Chen 「陈冠一」<br><small>PhD Student in HKUST-GZ</small>"
+
+# positions:
+# - logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+#   name: PhD Student
+
+
+email: "felixlinker02@gmail.com"
+# gscholar: HnyRsm8AAAAJ
+wechat_id: FelixLinker
+cv_link:
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    Hi! I am a first-year Ph.D. student in the
+    <a href="https://www.hkust-gz.edu.cn/academics/four-hubs/function-hub/microelectronics-thrust/" style="color: inherit;"
+      onmouseover="this.style.color='#76aad9';"
+      onmouseout="this.style.color='inherit';">
+      Microelectronics Thrust</a> at
+    <a href="https://www.hkust-gz.edu.cn/" style="color: inherit;"
+      onmouseover="this.style.color='#76aad9';"
+      onmouseout="this.style.color='inherit';">
+      The Hong Kong University of Science and Technology (Guangzhou)</a>, advised by
+    <a href="https://sosp.dev/" style="color: inherit;"
+      onmouseover="this.style.color='#76aad9';"
+      onmouseout="this.style.color='inherit';">
+      Dr. Jian Zhang</a>. I received my B.E. degree from the
+    <a href="https://cse.sysu.edu.cn/" style="color: inherit;"
+      onmouseover="this.style.color='#76aad9';"
+      onmouseout="this.style.color='inherit';">
+      School of Computer Science and Engineering</a>, Sun Yat-sen University in 2024, where I conducted research under the guidance of
+    <a href="https://xianweiz.github.io/" style="color: inherit;"
+      onmouseover="this.style.color='#76aad9';"
+      onmouseout="this.style.color='inherit';">
+      Associate Professor Xianwei Zhang</a>.
+  </p>
+
+  <p>
+    My primary research interests lie in
+    <strong>GPU architecture</strong> and
+    <strong>storage systems</strong>, with broad interests in
+    <strong>MLSys</strong>, <strong>compilers</strong>,
+    <strong>LLM agent applications</strong>, and
+    <strong>human-computer interaction</strong>.
+    My work aims to efficiently run core operating system functionalities on GPUs, thereby accelerating important applications such as large language models.
+  </p>
+portrait_url: /assets/images/photos/photo.png
+
