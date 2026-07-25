@@ -1,0 +1,82 @@
+---
+layout: default
+title: Projects
+navbar_title: Projects
+permalink: /projects/
+---
+
+<style>
+  .project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .project-logo {
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-logo img {
+    max-width: 220px;
+    height: auto;
+  }
+
+  .project-info {
+    flex: 1;
+  }
+
+  .project-info h5 {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-info p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .project-links a {
+    margin-right: 12px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 767.98px) {
+    .project-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .project-logo {
+      flex: none;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+
+<div class="my-3 bg-white shadow-sm rounded-sm">
+  <h6 class="p-3 mb-2 border-bottom border-gray" style="font-size: 1.25rem;"><i class="fas fa-flask"></i> Projects</h6>
+
+  <div class="project-card">
+    <div class="project-logo">
+      <img src="{{ '/assets/images/projects/ugds_logo.png' | relative_url }}" alt="uGDS Logo">
+    </div>
+    <div class="project-info">
+      <h5>uGDS — User-Space GPU Direct Storage</h5>
+      <p>
+        uGDS is the first production-oriented user-space GPU Direct Storage library. The CPU constructs NVMe commands and the SSD DMAs data directly to/from GPU memory over PCIe, completely bypassing the kernel NVMe driver.
+      </p>
+      <p>
+        With a GDS-compatible API, uGDS achieves up to <strong>5.3x higher bandwidth</strong> and <strong>108x lower 4KB latency</strong> (5.2&mu;s vs 561&mu;s) compared to NVIDIA GDS. It supports both NVIDIA CUDA and AMD ROCm backends, and has been integrated as the storage backend for <a href="https://github.com/ScaleX-IO/LMCache/tree/ugds-backend" target="_blank">LMCache</a>, delivering 2x TTFT reduction and 2x throughput improvement in vLLM end-to-end benchmarks.
+      </p>
+      <p class="project-links">
+        <a href="https://github.com/ScaleX-IO/uGDS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://github.com/ScaleX-IO/LMCache/tree/ugds-backend" target="_blank"><i class="fas fa-database"></i> LMCache Backend</a>
+      </p>
+    </div>
+  </div>
+
+</div>
