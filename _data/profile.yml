@@ -59,7 +59,7 @@ short_bio: >-
       onmouseover="this.style.color='#76aad9';"
       onmouseout="this.style.color='inherit';">
       ScaleX-IO</a> open-source project, dedicated to accelerating data transfer between GPUs and external storage media (DRAM/SSD) and providing infrastructure for RSI.
-    Around this project, I published the most first-author papers at top storage venues worldwide during the 2025–2026 academic year (3 papers).
+    Around this project, I published the most first-author papers at top storage conferences worldwide during the 2025–2026 academic year (3 papers).
     I am also happy to serve as an open-source intern in the
     <a href="https://github.com/vllm-project/vllm" style="color: inherit;"
       onmouseover="this.style.color='#76aad9';"
