@@ -1,5 +1,5 @@
 ---
-title:          "<strong><a class='paper-link'>CoPilotIO: CPU as a Co-pilot for GPU I/O to Free GPU Compute</a></strong>"
+title:          "<strong><a class='paper-link' href='https://www.usenix.org/system/files/osdi26-chen-guanyi.pdf' target='_blank' rel='noopener noreferrer'>CoPilotIO: CPU as a Co-pilot for GPU I/O to Free GPU Compute</a></strong>"
 cover_text:     "<strong>OSDI 2026</strong>"
 date:           2026-07-01 00:01:00 +0800
 selected:       true
@@ -8,4 +8,8 @@ pub_date:       "2026"
 
 authors:
   - <strong><u>Guanyi Chen</u></strong>, Qi Chen, Shu Yin, and Jian Zhang
+
+links:
+  PDF: https://www.usenix.org/system/files/osdi26-chen-guanyi.pdf
+  Code: https://github.com/HKUST-GZ-SYSTEM/OSDI26-CoPilotIO
 ---

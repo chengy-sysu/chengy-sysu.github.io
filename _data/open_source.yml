@@ -1,0 +1,38 @@
+updated: "2026-11-14"
+pull_requests:
+  - number: 67048
+    title: "Support KV Sharing across Non-Divisible Tensor Parallel Sizes"
+    role: Co-author
+    status: Open
+  - number: 55374
+    title: "Support piecewise prefix loading with NIXL connectors"
+    role: Co-author
+    status: Open
+  - number: 54421
+    title: "Support piecewise Store and P/D loading with Mooncake"
+    role: Co-author
+    status: Open
+  - number: 54307
+    title: "Support heterogeneous TP sharing for hybrid KV cache in Mooncake Store"
+    role: Author
+    status: Merged
+  - number: 54240
+    title: "Support piecewise prefix loading in MultiConnector"
+    role: Co-author
+    status: Open
+  - number: 53129
+    title: "Support heterogeneous TP sharing in Mooncake Store Connector"
+    role: Co-author
+    status: Merged
+  - number: 52466
+    title: "Add decode offloading to Mooncake Store consumers"
+    role: Author
+    status: Merged
+  - number: 52372
+    title: "Reference GPU blocks for in-flight store jobs and key the store ledger by store_job_id"
+    role: Author
+    status: Merged
+  - number: 49644
+    title: "Add disk offloading support to SimpleCPUOffloadConnector"
+    role: Author
+    status: Merged

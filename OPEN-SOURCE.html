@@ -1,0 +1,39 @@
+---
+layout: default
+title: Open-Source
+navbar_title: Open-Source
+permalink: /open-source/
+---
+
+<style>
+  .contribution-list { list-style: none; margin: 0; padding: 0; }
+  .contribution-item { padding: 1rem 0; border-top: 1px solid #e1e4e8; }
+  .contribution-title { font-size: 1rem; line-height: 1.5; overflow-wrap: anywhere; }
+  .contribution-title a { color: #253e52; }
+  .contribution-title a:hover { color: #76aad9; }
+  .contribution-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-top: 0.4rem; font-size: 0.85rem; }
+  .contribution-status { padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; }
+  .contribution-merged { color: #663399; background: #f2ebfa; }
+  .contribution-open { color: #206735; background: #eaf5ed; }
+</style>
+
+<div class="my-3 bg-white shadow-sm rounded-sm">
+  <h6 class="p-3 mb-0 border-bottom border-gray" style="font-size: 1.25rem;"><i class="fab fa-github"></i> Open-Source</h6>
+  <div class="p-4">
+    <h5><a href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener noreferrer">vLLM</a></h5>
+    <p class="mb-2">My contributions to KV-cache offloading, storage connectors, and sharing across tensor-parallel configurations.</p>
+    <p class="small text-muted">PR status as of {{ site.data.open_source.updated }}.</p>
+    <ul class="contribution-list">
+      {% for pr in site.data.open_source.pull_requests %}
+      <li class="contribution-item">
+        <div class="contribution-title">
+          <a href="https://github.com/vllm-project/vllm/pull/{{ pr.number }}" target="_blank" rel="noopener noreferrer">#{{ pr.number }} — {{ pr.title | escape }}</a>
+        </div>
+        <div class="contribution-meta">
+          <span class="contribution-status contribution-{{ pr.status | downcase }}">{{ pr.status }}</span>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

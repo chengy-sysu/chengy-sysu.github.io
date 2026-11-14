@@ -8,7 +8,7 @@ permalink: /projects/
 <style>
   .project-card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     padding: 1.5rem;
   }
@@ -21,8 +21,13 @@ permalink: /projects/
   }
 
   .project-logo img {
+    width: 100%;
     max-width: 220px;
     height: auto;
+  }
+
+  .project-card + .project-card {
+    border-top: 1px solid #e1e4e8;
   }
 
   .project-info {
@@ -75,6 +80,44 @@ permalink: /projects/
       <p class="project-links">
         <a href="https://github.com/ScaleX-IO/uGDS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://github.com/ScaleX-IO/LMCache/tree/ugds-backend" target="_blank"><i class="fas fa-database"></i> LMCache Backend</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-logo">
+      <img src="{{ '/assets/images/projects/copilotio_logo.png' | relative_url }}" alt="CoPilotIO Logo" loading="lazy">
+    </div>
+    <div class="project-info">
+      <h5>CoPilotIO — CPU as a Co-pilot for GPU I/O</h5>
+      <p>
+        CoPilotIO enables GPU kernels to initiate on-demand storage access while CPU cores handle completion polling, freeing GPU resources for computation. Split submission/completion queues, hardware-barrier synchronization, and adaptive CPU–GPU co-polling coordinate I/O efficiently.
+      </p>
+      <p>
+        Compared with BaM, CoPilotIO reduces I/O-induced stalls by up to <strong>55.5%</strong> and uses <strong>50% fewer SMs</strong> to saturate GPU PCIe bandwidth. It improves application performance by up to <strong>85%</strong> in evaluations including MoE inference and recommendation models.
+      </p>
+      <p class="project-links">
+        <a href="https://github.com/HKUST-GZ-SYSTEM/OSDI26-CoPilotIO" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.usenix.org/system/files/osdi26-chen-guanyi.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper (OSDI 2026)</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-logo">
+      <img src="{{ '/assets/images/projects/shaperio_logo.png' | relative_url }}" alt="ShaperIO Logo" loading="lazy">
+    </div>
+    <div class="project-info">
+      <h5>ShaperIO — Rethinking GPU I/O at Massive Scale</h5>
+      <p>
+        ShaperIO redesigns I/O scheduling, caching, and admission control for GPU-initiated storage access. It orders and merges concurrent requests to preserve write sequentiality, moves cache writeback off the critical eviction path, and regulates submissions to prevent SSD overload.
+      </p>
+      <p>
+        ShaperIO achieves up to <strong>7.51× higher post-write read bandwidth</strong> in microbenchmarks and up to <strong>2.54× end-to-end speedup</strong> across BFS, GNN training, and LLM inference with KV-cache offloading.
+      </p>
+      <p class="project-links">
+        <a href="https://github.com/ScaleXLab/ATC26-ShaperIO" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://doi.org/10.1145/3828523.3857013" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper (ATC 2026)</a>
       </p>
     </div>
   </div>
